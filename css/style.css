@@ -1,6 +1,13 @@
 /*Containers*/
-body{
-    background-color: #282828;
+html{
+    min-height: 100%;
+    background: -moz-linear-gradient(#080808 20%, #282828 40%, #424242 60%, #686868 80%);
+    background: -webkit-linear-gradient(#686868 20%, #424242 40%, #282828 60%, #080808 80%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
 }
 header{
     background-color: #000000;
