@@ -1,7 +1,17 @@
 <% include partials/header %>
-<section class="section"
-<div class="container">
-    <h1 class="title"><%= title %></h1>
-    <p class="subtitle">Welcome to <%= title %></p>
-</div>
-<% include partials/footer %>
+<nav class="navbar is-fixed-top is-primary" role="navigation">
+    <div class="container level has-dot-separator">
+        <ul class="navbar-end">
+            <li><a class="navbar-item has-navbar-fixed-top level-item has-text-centered">Home</a></li>
+            <li><a class="navbar-item has-navbar-fixed-top level-item has-text-centered">About</a></li>
+            <li><a class="navbar-item has-navbar-fixed-top level-item has-text-centered">Projects</a></li>
+        </ul>
+    </div>
+</nav>
+<section class="section hero">
+    <div class="container hero-body">
+        <h1 class="title"><%= title %></h1>
+        <p class="subtitle">Welcome to <%= title %></p>
+    </div>
+</section>
+    <% include partials/footer %>
