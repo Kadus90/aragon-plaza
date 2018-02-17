@@ -9,7 +9,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
-
+var axios = require('axios');
 var index = require('./routes/index');
 
 var app = express();
@@ -61,5 +61,10 @@ app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error');
 });
+
+
+// ==============================================================
+// Axios
+// ==============================================================
 
 module.exports = app;
