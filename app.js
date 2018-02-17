@@ -2,7 +2,8 @@
 // Get the needed tools.
 // ==============================================================
 
-var express = require('express');
+const express = require('express');
+const app = express();
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -12,7 +13,6 @@ var sassMiddleware = require('node-sass-middleware');
 var axios = require('axios');
 var index = require('./routes/index');
 
-var app = express();
 
 // ==============================================================
 // View engine setup.
